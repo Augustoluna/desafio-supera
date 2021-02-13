@@ -13,9 +13,36 @@ export const Container = styled.div`
 
   border: 1px solid steelblue;
   border-radius: 10px;
+`;
 
-  img {
-    height: 70%;
-    width: 90%;
-  }
+export const CardImg = styled.img`
+  height: 70%;
+  width: 90%;
+`;
+
+export const CardOptions = styled.div`
+  display: flex;
+  background-color: rgba(70, 130, 180, 0.8);
+  border-radius: 10px;
+  justify-content: space-around;
+  align-items: center;
+  height: 20%;
+  width: 90%;
+`;
+
+export const AddCartIcon = styled.img`
+  display: flex;
+  height: 50%;
+  width: 25%;
+`;
+
+export const RemoveCartIcon = styled.img`
+  display: flex;
+  height: 20%;
+  width: 20%;
+`;
+
+export const CardTitle = styled.h3`
+  display: flex;
+  font-size: 16px;
 `;
