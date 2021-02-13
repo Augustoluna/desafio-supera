@@ -1,6 +1,7 @@
 import Header from "./components/Header/Header";
 import GameCard from "./components/GameCard/GameCard";
 import GamesGrid from "./components/GamesGrid/GamesGrid";
+import Ordenator from "./components/Ordenator/Ordenator";
 
 import GlobalStyle from "./styles/globalStyle";
 
@@ -10,6 +11,7 @@ function App() {
   return (
     <>
       <Header />
+      <Ordenator />
       <GamesGrid>
         {products.map((product) => (
           <GameCard
