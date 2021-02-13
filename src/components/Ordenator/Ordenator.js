@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { OrdenatorMainDiv, OrdenatorLabel, OrdenatorSelect } from "./Styled";
 
-const Ordenator = ({ handleSorting }) => {
-  const [sortingOption, setSortingOption] = useState("");
+const Ordenator = ({ receiveSortingOption }) => {
+  const [Option, setOption] = useState("");
 
   const handleSelect = (event) => {
-    setSortingOption(event.target.value);
+    setOption(event.target.value);
+    receiveSortingOption(event.target.value);
   };
   //   useEffect(() => {
   //     handleSorting(sortingOption);
