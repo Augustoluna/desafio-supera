@@ -34,6 +34,8 @@ export const AddCartIcon = styled.img`
   display: flex;
   height: 50%;
   width: 25%;
+
+  :hover ;
 `;
 
 export const RemoveCartIcon = styled.img`

@@ -1,8 +1,17 @@
 import React from "react";
-import { MainDiv } from "./Styled";
+import { MainDiv, GoBackButton, CartInfos } from "./Styled";
 
-const CartMain = () => {
-  return <MainDiv></MainDiv>;
+const CartMain = ({ handleToggleCart }) => {
+  const handleGoBack = () => {
+    handleToggleCart(false);
+  };
+
+  return (
+    <MainDiv>
+      <CartInfos></CartInfos>
+      <GoBackButton onClick={handleGoBack}>voltar</GoBackButton>
+    </MainDiv>
+  );
 };
 
 export default CartMain;
