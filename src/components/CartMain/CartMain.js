@@ -1,5 +1,5 @@
 import React from "react";
-import { MainDiv, GoBackButton } from "./Styled";
+import { MainDiv, GoBackButton, TextValuesDiv } from "./Styled";
 import CartCard from "../CartCard/CartCard";
 
 const CartMain = ({ handleToggleCart, onCartProducts }) => {
@@ -15,7 +15,7 @@ const CartMain = ({ handleToggleCart, onCartProducts }) => {
     let total = 0;
     let shipping = (CartMain.length + 1) * 10;
 
-    if (subTotal < 250.0) {
+    if (subTotal <= 250.0) {
       total = subTotal + shipping;
     } else {
       total = subTotal;
@@ -35,18 +35,20 @@ const CartMain = ({ handleToggleCart, onCartProducts }) => {
           price={product.price}
         />
       ))}
-      <p>
-        frete:
-        {CalculateTotal(subTotal).shipping.toFixed(2)}
-      </p>
-      <p>
-        subtotal:
-        {subTotal.toFixed(2)}
-      </p>
-      <p>
-        total:
-        {CalculateTotal(subTotal).total.toFixed(2)}
-      </p>
+      <TextValuesDiv>
+        <p>
+          Frete:
+          {CalculateTotal(subTotal).shipping.toFixed(2)}
+        </p>
+        <p>
+          Subtotal:
+          {subTotal.toFixed(2)}
+        </p>
+        <p>
+          Total:
+          {CalculateTotal(subTotal).total.toFixed(2)}
+        </p>
+      </TextValuesDiv>
       <GoBackButton onClick={handleGoBack}>voltar</GoBackButton>
     </MainDiv>
   );

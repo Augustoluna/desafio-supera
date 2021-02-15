@@ -3,21 +3,19 @@ import styled from "styled-components";
 export const Container = styled.div`
   margin: 10px;
   padding: 10px;
-
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   text-align: center;
-  width: 200px;
-
+  width: 30vw;
+  height: 20vh;
   border: 1px solid steelblue;
   border-radius: 10px;
 `;
 
 export const CardImg = styled.img`
   height: 70%;
-  width: 90%;
+  width: 20%;
 `;
 
 export const CardTitle = styled.h3`

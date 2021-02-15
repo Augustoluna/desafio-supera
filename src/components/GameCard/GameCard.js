@@ -1,12 +1,10 @@
 import React from "react";
 import cartIcon from "../../assets/cart-icon.svg";
-import arrowDown from "../../assets/arrow-down-icon.svg";
 import {
   Container,
   CardImg,
   CardOptions,
   AddCartIcon,
-  RemoveCartIcon,
   CardTitle,
 } from "./styles";
 
@@ -28,7 +26,6 @@ const GameCard = ({ id, image, name, price, handleUpdateCart }) => {
           alt="adicionar no carrinho"
           onClick={handleAddToCart}
         />
-        <RemoveCartIcon src={arrowDown} alt="remover do carrinho " />
       </CardOptions>
     </Container>
   );

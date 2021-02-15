@@ -1,7 +1,7 @@
 import React from "react";
 import { FiShoppingCart as CartIcon } from "react-icons/fi";
 
-import { Container, HeaderCartBox } from "./styles";
+import { Container, HeaderCartBox, Title } from "./styles";
 
 const Header = ({ cartLength, handleToggleCart }) => {
   const logoUrl =
@@ -13,6 +13,7 @@ const Header = ({ cartLength, handleToggleCart }) => {
   return (
     <Container>
       <img src={logoUrl} alt="" />
+      <Title>SUPERA GAMES</Title>
       <HeaderCartBox onClick={showCartMain}>
         <p>My Cart</p>
         <CartIcon size={20} />

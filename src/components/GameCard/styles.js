@@ -22,26 +22,27 @@ export const CardImg = styled.img`
 
 export const CardOptions = styled.div`
   display: flex;
-  background-color: rgba(70, 130, 180, 0.8);
+  background-color: rgba(70, 130, 180, 0.6);
   border-radius: 10px;
   justify-content: space-around;
   align-items: center;
   height: 20%;
   width: 90%;
+
+  &:hover {
+    background-color: goldenrod;
+    cursor: pointer;
+  }
+
+  &:active {
+    background-color: gray;
+  }
 `;
 
 export const AddCartIcon = styled.img`
   display: flex;
   height: 50%;
   width: 25%;
-
-  :hover ;
-`;
-
-export const RemoveCartIcon = styled.img`
-  display: flex;
-  height: 20%;
-  width: 20%;
 `;
 
 export const CardTitle = styled.h3`
