@@ -18,12 +18,3 @@ export const GoBackButton = styled.button`
   border-radius: 10px;
   width: 10vw;
 `;
-
-export const CartInfos = styled.div`
-  display: flex;
-  height: 60vh;
-  width: 25vw;
-  border-radius: 10px;
-  background-color: steelblue;
-  margin: 10px;
-`;

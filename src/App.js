@@ -53,7 +53,7 @@ function App() {
       <Header handleToggleCart={handleToggleCart} cartLength={cart.length} />
 
       {toggleCart ? (
-        <CartMain handleToggleCart={handleToggleCart} />
+        <CartMain onCartProducts={cart} handleToggleCart={handleToggleCart} />
       ) : (
         <>
           <Ordenator receiveSortingOption={receiveSortingOption} />
